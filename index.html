@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>Razor</title>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   
   <body>
     <!-- Navbar -->
-    <nav class="bg-blue-950">
+    <nav class="bg-[#02042a]">
       <div class="relative w-[1080px] mx-auto flex items-stretch justify-between gap-4">
         <div class="flex gap-6">
           <a href="/">
@@ -36,18 +37,18 @@
     </nav>
 
     <!-- Hero Section -->
-     <section class="bg-blue-950 py-8">
+     <section class="bg-[#02042a] py-8">
 
-      <div class="flex justify-center max-w-4xl mx-auto">
+      <div class="flex w-[80%] justify-center items-center max-w-4xl mx-auto">
         <!-- Left Part -->
         <div class="flex flex-col gap-6 py-10 w-1/3">
-          <h1 class="text-white text-3xl">Power your finance, grow your business</h1>
-          <div class="h-1 w-6 bg-white opacity-70"></div>
+          <h1 class="text-white text-3xl font-bold leading-tight">Power your finance, grow your business</h1>
+          <div class="h-1 bg-green-200 w-6 opacity-70 leading-7"></div>
           <p class="text-slate-400">
             Accept payments from customers. Automate payouts to vendors &
             employees. Never run out of working capital.
           </p>
-          <button class="bg-blue-500 w-fit px-3 py-2.5 rounded-md font-bold text-white text-sm">
+          <button class="bg-blue-500 hover:bg-blue-600 w-fit px-3 py-2.5 rounded-md font-bold text-white text-sm transition-all duration-200">
             Sign Up Now
           </button>
         </div>
@@ -56,10 +57,78 @@
          <img class="w-2/3" src="./images/hero-illustration.jpg">
       </div>
 
-      <div></div>
-
+      
+     
      </section>
-    
-    <script type="module" src="/src/main.js"></script>
+
+     <!-- Shape -->
+     <div class="overflow-x-hidden">
+        <img class="relative w-[100.1%] max-w-none" src="./images/hero-shape.svg" alt="">
+      </div>
+
+      <!-- Feature Section 1 -->
+       <section class="relative -top-7 flex flex-col items-center">
+        <img class="absolute -top-12 left-20" src="./images/feature-section1-dottedrows.png" loading="lazy">
+        <img class="absolute right-0 top-5 rotate-180" src="./images/feature-section1-dottedrows.png" loading="lazy">
+        <p class="font-bold text-lg">Accept Payments with Razorpay Payment Suite</p>
+        <div class="bg-green-200 h-1 w-6 mt-3"></div>
+
+        <!-- Content Box -->
+        <div class="relative border border-slate-300 rounded-md w-[60%] p-7 mt-15">
+          <!-- Left Side Content -->
+          <div class="max-w-120 w-[50%]">
+            <p class="font-semibold text-xl mb-12">Supercharge your business with the all‑powerful
+              <span class="text-blue-400">Payment Gateway</span>
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex gap-2 items-center">
+                <p data-feather="check" class="text-green-400"></p>
+                <span>100+ Payment Methods</span>
+              </li>
+              <li class="flex gap-2 items-center">
+                <p data-feather="check" class="text-green-400"></p>
+                <span>Industry Leading Success Rate</span>
+              </li>
+              <li class="flex gap-2 items-center">
+                <p data-feather="check" class="text-green-400"></p>
+                <span>Superior Checkout Experience</span>
+              </li>
+              <li class="flex gap-2 items-center">
+                <p data-feather="check" class="text-green-400"></p>
+                <span>Easy to Integrate</span>
+              </li>
+              <li class="flex gap-2 items-center">
+                <p data-feather="check" class="text-green-400"></p>
+                <span>Instant Settlements from day 1</span>
+              </li>
+              <li class="flex gap-2 items-center">
+                <p data-feather="check" class="text-green-400"></p>
+                <span>In-depth Reporting and Insights</span>
+              </li>
+            </ul>
+            <div class="flex gap-4 mt-12 text-sm"> 
+              <button class="bg-blue-500 text-white rounded-md px-4 py-3 font-semibold">
+                Sign Up Now
+                <span>
+                  →
+                </span>
+              </button>
+              <div class="flex items-center">
+                <a href="#" class="font-bold text-blue-400">
+                  know More
+                </a>
+                <i data-feather="chevron-right" class="h-5 w-5 text-blue-400"></i>
+              </div>
+            </div>
+          </div>
+          <img class="absolute top-0 right-0 w-[60%]" src="./images/payment-suite.png">
+        </div>
+       </section>
+     
+
+       <div class="h-100"></div>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
